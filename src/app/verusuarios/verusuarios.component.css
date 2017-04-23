@@ -1,0 +1,12 @@
+#back { 
+    background: url(app/img/Audi1.jpg);
+  width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+#new-board-btn {
+    white-space: normal;
+}

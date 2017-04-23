@@ -1,0 +1,70 @@
+<div id="back">
+  <div class="container">
+    <div class="page-header">
+      <h3 style="color: whitesmoke">Seleccione los parametros</h3>
+</div>
+<div class="row">
+  <div class="col-md-1">
+    <div class="checkbox">
+      <label style="color: whitesmoke"><input type="checkbox" value="">Nombre</label>
+</div>
+</div>
+<div class="col-md-1">
+  <div class="checkbox">
+    <label style="color: whitesmoke"><input type="checkbox" value="">Apellido</label>
+</div>
+</div>
+<div class="col-md-1">
+  <div class="checkbox">
+    <label style="color: whitesmoke"><input type="checkbox" value="">Materia</label>
+</div>
+</div>
+<div class="col-md-1">
+  <div class="checkbox">
+    <label style="color: whitesmoke"><input type="checkbox" value="">Grupo</label>
+</div>
+</div>
+<div class="col-md-1">
+  <div class="checkbox">
+    <label style="color: whitesmoke"><input type="checkbox" value="">Correo</label>
+</div>
+</div>
+
+<div class="col-md-1">
+  <input type="submit" value="Buscar" class="btn btn-success">
+</div>
+
+<table class="table table-striped">
+  <thead>
+    <tr class="active">
+
+      <th>Nombre</th>
+      <th>Apellido Paterno</th>
+      <th>Apellido Materno</th>
+      <th>Materia</th>
+      <th>Grupo</th>
+      <th>Correo</th>
+      <th>Borrar Usuario </th>
+      <th>Editar Usuario </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info" *ngFor="let usuario of usuarios">
+      <td> {{usuario.nombre}} </td>
+      <td> {{usuario.apellidopaterno}} </td>
+      <td> {{usuario.apellidomaterno}} </td>
+      <td> {{usuario.materia}} </td>
+      <td> {{usuario.grupo}} </td>
+      <td> {{usuario.correo}} </td>
+      <td> <input type="submit" value="Borrar" (click)="borrar(usuario)" class="btn btn-success"> </td>
+      <td>
+        <a id="btn-editar" class="btn btn-success" (click)="modificar(usuario)">Editar  </a>
+      </td>
+
+    </tr>
+
+  </tbody>
+
+</table>
+</div>
+</div>
