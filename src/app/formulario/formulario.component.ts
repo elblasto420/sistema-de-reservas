@@ -14,9 +14,9 @@ export class FormularioComponent implements OnInit {
   constructor(private router: Router, private servicio: ServicioHttpService) { }
 
   ngOnInit() {
-    if (localStorage.getItem('userId')) {
-      this.router.navigate(['inicio']);
-    }
+    // if (localStorage.getItem('userId')) {
+    //   this.router.navigate(['inicio']);
+    // }
   }
 
   register(): void {
